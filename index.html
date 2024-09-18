@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Hire Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Bike Hire Manager App</h1>
+    <h2>Customer KYC</h2>
+
+    <section class="kyc-form">
+        <form id="customerForm">
+
+            <!-- Row 1 -->
+            <div class="form-group">
+                <div class="field">
+                    <label for="idNumber">ID Number</label>
+                    <input type="text" id="idNumber" required>
+                </div>
+                <div class="field">
+                    <label for="name">Customer Name</label>
+                    <input type="text" id="name" required>
+                </div>
+            </div>
+
+            <!-- Row 2 -->
+
+            <div class="form-group">
+                <div class="field">
+                    <label for="gender">Gender</label>
+                    <select id="gender" required>
+                        <option value="select">Select ...</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label for="customerType">Customer Type</label>
+                    <select name="customerType" id="customerType" required>
+                        <option value="select" selected>Select ...</option>
+                        <option value="adult">Adult</option>
+                        <option value="child">Child</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Button -->
+
+
+            <button type="button" id="startTrip">Start Trip</button>
+
+            </div>
+
+
+        </form>
+    </section>
+
+    <section class="trips">
+        <div class="active-trips">
+
+            <h2 class="header active">Active Trips</h2>
+
+            <table id="activeTrips">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Start Time</th>
+                        <th>Duration</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <div class="completed-trips">
+
+            <h2 class="header complete">Complete Trips</h2>
+
+            <table id="completedTrips">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Type</th>
+                        <th>Start Time</th>
+                        <th>End Time</th>
+                        <th>Durable</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+    </section>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

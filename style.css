@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 1.8em;
+    height: 100vh;
+
+}
+
+h1,
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+.kyc-form {
+    background-color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2em 1em;
+}
+
+
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 37.5em;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
+.field {
+    flex: 1;
+    margin-right: 0.8em;
+}
+
+.field:last-child {
+    margin-right: 0;
+}
+
+.field label {
+    display: block;
+    margin-bottom: 0.4em;
+    width: 100%;
+}
+
+input,
+select {
+    margin-bottom: 0.8em;
+    padding: 0.8em 2em;
+    width: 100%;
+}
+
+
+
+button {
+    padding: 0.6em 0.9em;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+
+
+.trips {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1em;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+.time-counter {
+    font-weight: bold;
+}
+
+h2.header {
+    padding: 0.3em 0.4em;
+    color: #fff;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+.complete {
+    background-color: #c55536;
+}
